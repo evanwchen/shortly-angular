@@ -4,7 +4,8 @@ angular.module('shortly', [
   'shortly.shorten',
   'shortly.auth',
   'shortly.shortenedLink',
-  'ui.router'
+  'ui.router',
+  'ngMaterial'
 ])
 .config(function ($httpProvider, $stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/signin');

@@ -1,7 +1,6 @@
 angular.module('shortly.services', [])
 
 .factory('Links', function ($http) {
-  // Your code here
   var getAll = function () {
     return $http.get('/api/links')
     .then(function (resp) {
